@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi portafolio</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- MENU -->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#">Edison</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i><i></i>
+            </div>
+        </header>
+    </div>
+    <!-- INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="container-banner-loading">
+            <div class="container-banner">
+                <div class="container-img">
+                    <img src="./img/EAVR.jpg">
+                </div>
+                <h1>EDISON VALLE</h1>
+                <h2>Developer</h2>
+                <div class="redes">
+                    <a href="https://www.facebook.com/andres.valle.0989/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/andres-valle-ruiz-b42337262/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>    
+        </div>
+        <!-- <div class="container-banner">
+            <div class="container-img">
+                <img src="./img/EAVR.jpg">
+            </div>
+            <h1>EDISON VALLE</h1>
+            <h2>Develop</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/andres.valle.0989/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/andres-valle-ruiz-b42337262/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>  -->
+    </section>
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="container-section">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Edison Valle. </span>Soy una persona responsable, capaz, 
+                organizada, honesta, proactivo con 
+                alto compromiso para cumplir los 
+                objetivos planteados. 
+                Con experiencia en mantenimiento 
+                a equipos de cómputo y soporte a 
+                usuarios; Programación en Python y 
+                en Java; diseño web con Html y Css 
+                con programación en JavaScript, 
+                ediciones de video y diseño gráfico.
+            </p>
+
+            <div class="fila">
+                <!-- Datos Personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            +593 99 7307 943
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            andres.valle150@gmail.com
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Cdla. Valle de la Flor Mz. 2573 V. 15
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            15/Marzo/2002
+                        </li>
+                    </ul>
+                </div>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="container-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Libros</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>Pintar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Fotografía</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-biking"></i>
+                            <span>Deporte</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cv">
+                <button type="button">
+                    <a download="Curriculum-Edison-Valle" href="./pdf/Curriculum Andres Valle Certificados(28_04_2023).pdf"> 
+                        Descargar CV <i class="fa-solid fa-download"></i>
+                    </a>
+                    <span class="overlay"></span>
+                </button>
+                <button type="button">
+                    <a href="https://edisonvalle26.github.io/Curriculum-vitae/"> 
+                        Ver CV <i class="fa-sharp fa-solid fa-square-up-right"></i>
+                    </a>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- HABILIDADES -->
+    <section class="habilidades" id="habilidades">
+        <div class="container-section">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Habilidades Tecnicas -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="habilidad">
+                        <span>Html</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Css</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>JavaScript</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Java</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Python</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>TypeScript</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>PostgreSQL</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>MySQL</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades Profesionales -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="habilidad">
+                        <span>Comunicación</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Creatividad</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Dedicación</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Liderazgo</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Proyect Management</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Gestión del tiempo y adaptabilidad</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Razonamiento matemático y analítico</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="container-section">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <!-- IZQUIERDA -->
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Licenciatura en Sistemas</h4>
+                        <span class="nombre">Universidad de Guayaquil</span>
+                        <span class="fecha">2021 - Presente</span>
+                        <p>Facultad De Ingeniería Industrial Carrera De Licenciatura En Sistemas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DERECHA -->
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Técnico de Sistemas </h4>
+                        <span class="nombre">Righttek</span>
+                        <span class="fecha">2019 - 2019</span>
+                        <p>Inventario de equipo de cómputo, Instalación de aplicaciones en los 
+                                equipos de cómputo, Mantenimiento de hardware, Instalación de 
+                                sistemas operativos.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <div class="container-section">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./img/Pg_Movies.png">
+                    <div class="overlay">
+                        <h3>Diseño Web de Películas</h3>
+                        <p>Movies</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/EdisonValle26/api-rest-javascript-practico-Public"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://edisonvalle26.github.io/api-rest-javascript-practico-Public/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/Pg_Mensajeria.png">
+                    <div class="overlay">
+                        <h3>Aplicación de Mensajeria</h3>
+                        <p>Messages</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/EdisonValle26/Mensajeria_Proyecto_Final/tree/main/JavaFX_Proyecto_Unidad2"><i class="fa-brands fa-github"></i></a>
+                            <!-- <a href="https://www.linkedin.com/in/andres-valle-ruiz-b42337262/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/Pg_Snake.png">
+                    <div class="overlay">
+                        <h3>Juego de la Serpiente</h3>
+                        <p>Game Snake</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/EdisonValle26/Snake_Game"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://edisonvalle26.github.io/Snake_Game/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/Pg_Puzzle.png">
+                    <div class="overlay">
+                        <h3>Juego de Puzzle</h3>
+                        <p>Puzzle</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/EdisonValle26/EdisonValle26github.io-Puzzle"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://edisonvalle26.github.io/EdisonValle26github.io-Puzzle/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/Pg_Google.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Página de Google</h3>
+                        <p>Clone Google</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/EdisonValle26/Google_Clone/tree/main/Clone_Google"><i class="fa-brands fa-github"></i></a>
+                            <!-- <a href="https://www.linkedin.com/in/andres-valle-ruiz-b42337262/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/Pg_Chat.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño de Chat</h3>
+                        <p>Chat Box</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/EdisonValle26/ChatBox_UI_Desing/tree/main/Chat-Box-UI-Design"><i class="fa-brands fa-github"></i></a>
+                            <!-- <a href="https://edisonvalle26.github.io/ChatBox_UI_Desing/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="container-section">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form action="https://formsubmit.co/andres.valle150@gmail.com" method="POST" class="col">
+                    <input type="text" placeholder="Escribe tu nombre" name="name">
+                    <input type="text" placeholder="Dirección de correo" name="email">
+                    <input type="text" placeholder="Asunto" name="subject">
+                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit" value="Enviar">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                        <input type="hidden" name="_next" value="https://edisonvalle26.github.io/PortafolioEAVR/">
+                </form>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="./img/ubicacion.png">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Cdla. Valle de la Flor Mz. 2573 V. 15
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Contactame: +593 99 7307 943
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: andres.valle150@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/andres.valle.0989/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/andres-valle-ruiz-b42337262/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
